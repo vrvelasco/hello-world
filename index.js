@@ -28,5 +28,5 @@ let myNumber = 07; // Let's change it
 myNumber = 88;
 
 // Boolean
-let myFlag = False; // Let's change it
-myFlag = True;
+let myFlag = false; // Let's change it
+myFlag = true;
