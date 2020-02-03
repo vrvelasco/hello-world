@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "browser-sync start --server --files '*.html, *.css, *.js'"
   },
-  "keywords": [js],
+  "keywords": [],
   "author": "Victor Velasco",
   "license": "ISC",
   "devDependencies": {
