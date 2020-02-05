@@ -50,60 +50,105 @@
 // Homework 2/5/2020
 // *************************************************************************************
 
-const timeOfDay = "Evening"; // String variable
+// const timeOfDay = "Evening"; // String variable
 
-const greeting = `Good ${timeOfDay}!`; // Template literal -> "Good Evening!"
+// const greeting = `Good ${timeOfDay}!`; // Template literal -> "Good Evening!"
 
-console.log(greeting); // Prints the greeting
+// console.log(greeting); // Prints the greeting
 
-let x; // New variable; not assigned
+// let x; // New variable; not assigned
 
-console.log(typeof x); // Undefined
+// console.log(typeof x); // Undefined
 
-x = null; // Purposely blank
+// x = null; // Purposely blank
 
-console.log(typeof x); // "Object"
+// console.log(typeof x); // "Object"
 
-try {
-  console.log(thisVariableDoesNotExist); // Not defined
-} catch (e) {
-  console.log("There was an error: " + e.message); // Display message after exception
-}
+// try {
+//   console.log(thisVariableDoesNotExist); // Not defined
+// } catch (e) {
+//   console.log("There was an error: " + e.message); // Display message after exception
+// }
 
-console.log(greeting); // Did a try/catch above so that it can continue
+// console.log(greeting); // Did a try/catch above so that it can continue
 
-const name = "Victor"; // String variable
+// const name = "Victor"; // String variable
 
-let favoriteSong = "The Reason"; // Favorite song
+// let favoriteSong = "The Reason"; // Favorite song
 
-let wage = 1000000; // I wish :)
+// let wage = 1000000; // I wish :)
 
-let age = 31; // My age
+// let age = 31; // My age
 
-const onlyChild = false; // Boolean
+// const onlyChild = false; // Boolean
 
-let satisfied = true; // Boolean
+// let satisfied = true; // Boolean
 
-let favoriteThing = "Video Games"; // String variable
+// let favoriteThing = "Video Games"; // String variable
 
-console.log(typeof favoriteThing); // Prints data type
+// console.log(typeof favoriteThing); // Prints data type
 
-favoriteSong = "En Peligro De Extincion"; // New favorite song
+// favoriteSong = "En Peligro De Extincion"; // New favorite song
 
-favoriteThing = 42; // THE ANSWER TO LIFE, THE UNIVERSE AND EVERYTHING
+// favoriteThing = 42; // THE ANSWER TO LIFE, THE UNIVERSE AND EVERYTHING
 
-console.log(typeof favoriteThing); // Print data type
+// console.log(typeof favoriteThing); // Print data type
 
-age = 32; // On Dec 6th
+// age = 32; // On Dec 6th
 
-wage = 2000000; //  Why not?
+// wage = 2000000; //  Why not?
 
-satisfied = true; // Still true
+// satisfied = true; // Still true
 
-console.log(
-  "My name is " +
-    name +
-    ' and my current favorite song is "' +
-    favoriteSong +
-    '".'
-); // Sentence using two variables
+// console.log(
+//   "My name is " +
+//     name +
+//     ' and my current favorite song is "' +
+//     favoriteSong +
+//     '".'
+// ); // Sentence using two variables
+
+/* ********************************
+ * In class - 2/5/2020
+ * ********************************/
+
+// UNDEFINED is a PRIMITIVE TYPE.
+// It signifies the absence of ANY value.
+let y; // Same as let y = undefined;
+
+console.log(y); // Undefined
+
+// NULL represents a deliberate assignment of 'nothing'.
+let z = null;
+console.log(z);
+
+// This is an OBJECT.
+const me = {
+  name: "Manav",
+  age: 23,
+  pets: {
+    cat: "Dara",
+    dog: "James"
+  }
+};
+
+console.log(me.name); // Prints value of name property
+
+console.log(typeof me.name); // String
+
+console.log(typeof me); // Object
+
+console.log(me.age); // Undefined
+
+// Create a new key value pair with age = 23.
+me.age = 23;
+
+console.log(me.age); // 23
+
+me.name = "Dhanav"; // User's name changes
+
+console.log(me); // Displays user's name and age
+
+console.log(me.pets.cat); // Displays the cat's name
+
+console.log(me.pet.cat); // "Undefined.cat" -> Exception: Primitive type cannot use dot notation
