@@ -114,41 +114,54 @@
 
 // UNDEFINED is a PRIMITIVE TYPE.
 // It signifies the absence of ANY value.
-let y; // Same as let y = undefined;
+// let y; // Same as let y = undefined;
 
-console.log(y); // Undefined
+// console.log(y); // Undefined
 
 // NULL represents a deliberate assignment of 'nothing'.
-let z = null;
-console.log(z);
+// let z = null;
+// console.log(z);
 
 // This is an OBJECT.
-const me = {
-  name: "Manav",
-  age: 23,
-  pets: {
-    cat: "Dara",
-    dog: "James"
-  }
-};
+// const me = {
+  // name: "Manav",
+  // age: 23,
+  // pets: {
+    // cat: "Dara",
+    // dog: "James"
+  // }
+// };
 
-console.log(me.name); // Prints value of name property
+// console.log(me.name); // Prints value of name property
 
-console.log(typeof me.name); // String
+// console.log(typeof me.name); // String
 
-console.log(typeof me); // Object
+// console.log(typeof me); // Object
 
-console.log(me.age); // Undefined
+// console.log(me.age); // Undefined
 
 // Create a new key value pair with age = 23.
-me.age = 23;
+// me.age = 23;
 
-console.log(me.age); // 23
+// console.log(me.age); // 23
 
-me.name = "Dhanav"; // User's name changes
+// me.name = "Dhanav"; // User's name changes
 
-console.log(me); // Displays user's name and age
+// console.log(me); // Displays user's name and age
 
-console.log(me.pets.cat); // Displays the cat's name
+// console.log(me.pets.cat); // Displays the cat's name
 
-console.log(me.pet.cat); // "Undefined.cat" -> Exception: Primitive type cannot use dot notation
+// console.log(me.pet.cat); // "Undefined.cat" -> Exception: Primitive type cannot use dot notation
+
+// *************************************************************************************
+// Homework 2/10/2020
+// *************************************************************************************
+const me = {
+name: "Victor",
+  age: 31,
+  employement: {
+  employer: "Commerce Bank",
+    yearsEmployed: 7
+  }
+};
+  
