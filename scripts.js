@@ -124,12 +124,12 @@
 
 // This is an OBJECT.
 // const me = {
-  // name: "Manav",
-  // age: 23,
-  // pets: {
-    // cat: "Dara",
-    // dog: "James"
-  // }
+// name: "Manav",
+// age: 23,
+// pets: {
+// cat: "Dara",
+// dog: "James"
+// }
 // };
 
 // console.log(me.name); // Prints value of name property
@@ -156,12 +156,30 @@
 // *************************************************************************************
 // Homework 2/10/2020
 // *************************************************************************************
-const me = {
-name: "Victor",
+const bio = {
+  // Bio Object
+  name: "Victor Velasco",
   age: 31,
-  employement: {
-  employer: "Commerce Bank",
+  employment: {
+    // Nested Object
+    employer: "Commerce Bank",
     yearsEmployed: 7
   }
 };
-  
+
+// Print with template literal
+console.log(`Name: ${bio.name.toUpperCase()}
+Age: ${bio.age}
+Employment: ${bio.employment.employer} for ${
+  bio.employment.yearsEmployed
+} years`);
+
+// Add key value pair by dot notation
+bio.jobTitle = "CSR III";
+
+// Reassign key
+bio.employment.yearsEmployed = 8;
+
+// Print new data
+console.log(`Job title: ${bio.jobTitle}
+Anniversary: ${bio.employment.yearsEmployed} years employed in May 2020`);
