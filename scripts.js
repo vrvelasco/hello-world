@@ -156,30 +156,89 @@
 // *************************************************************************************
 // Homework 2/10/2020
 // *************************************************************************************
-const bio = {
-  // Bio Object
-  name: "Victor Velasco",
-  age: 31,
-  employment: {
-    // Nested Object
-    employer: "Commerce Bank",
-    yearsEmployed: 7
-  }
-};
+// const bio = {
+//Bio Object
+// name: "Victor Velasco",
+// age: 31,
+// employment: {
+//Nested Object
+// employer: "Commerce Bank",
+// yearsEmployed: 7
+// }
+//};
 
 // Print with template literal
-console.log(`Name: ${bio.name.toUpperCase()}
-Age: ${bio.age}
-Employment: ${bio.employment.employer} for ${
-  bio.employment.yearsEmployed
-} years`);
+// console.log(`Name: ${bio.name.toUpperCase()}
+// Age: ${bio.age}
+// Employment: ${bio.employment.employer} for ${
+// bio.employment.yearsEmployed
+// } years`);
 
 // Add key value pair by dot notation
-bio.jobTitle = "CSR III";
+// bio.jobTitle = "CSR III";
 
 // Reassign key
-bio.employment.yearsEmployed = 8;
+// bio.employment.yearsEmployed = 8;
 
 // Print new data
-console.log(`Job title: ${bio.jobTitle}
-Anniversary: ${bio.employment.yearsEmployed} years employed in May 2020`);
+// console.log(`Job title: ${bio.jobTitle}
+// Anniversary: ${bio.employment.yearsEmployed} years employed in May 2020`);
+
+// *************************************************************************************
+// In class 2/10/2020
+// *************************************************************************************
+// Const is not about immutability.
+// console.log(bio["age"]); // Bracket notation
+
+// const keyThatINeed = "age";
+
+// Use BRACKET NOTATION to access a key that is REFERENCED by a VARIABLE.
+// console.log("Bracket notation with variable:", bio[keyThatINeed]); // Prints "age" above in bio object
+// console.log("Bracket notation with string:", bio["keyThatINeed"]); // Undefined
+
+// Relational or COMPARISON OPERATORS always yields BOOLEANS.
+// console.log(1 === 2); // False
+
+/*
+ * To check if 2 things are considered to equal...
+ * '===' is STRICT EQUALITY.
+ * It checks the VALUE and TYPE.
+ */
+// console.log(2 === 2); // True
+// console.log(2 === 3); // False
+// console.log(2 !== 3); // True
+
+// const x = 3;
+
+// EXPRESSION is anything that evaluates to a value
+// STATEMENTS combine EXPRESSIONS with keywords and other syntax
+// if (x === 3) {
+// Braces establish the SCOPE of the code.
+// console.log("x is 3!");
+// } else {
+// console.log("x is not 3!");
+// }
+
+// const age = 25;
+
+// if (age >= 25) {
+// console.log("Renting a car is affordable");
+// } else if (age >= 18) {
+// If age is between 18 and 25
+// console.log("Renting will be expensive");
+// } else {
+// All other age
+// console.log("You can't rent a car legally!");
+// }
+
+// const name = "";
+
+// JS is a DYNAMICALLY TYPED language.
+// We can quickly check to see if a value is 'truthy' or 'falsey'
+// if (name) {
+  // console.log("The user filled out the name");
+// } else {
+  // console.error("User left name blank");
+// }
+
+// console.log(Boolean(3)); // True
