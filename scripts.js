@@ -242,3 +242,49 @@
 // }
 
 // console.log(Boolean(3)); // True
+
+// *************************************************************************************
+// In class 2/24/2020
+// *************************************************************************************
+// console.log(window);
+
+// window.console.log("Hello, World");
+
+// Global Scope alongside (NOT INSIDE) 'window'
+// const me = {
+//  name: "Manava"
+// };
+
+// console.log(window.me); // Undefined
+// console.log(window.me.name); // Exception
+
+// alert("Hello"); // Alert window
+// const person = {};
+// const expenses = {};
+
+// expenses.totalBudget = 1000;
+
+// expenses.lights = prompt("How much is your light bill?");
+
+// alert(`You have ${expenses.totalBudget - expenses.lights} remaining.`);
+// Prompt is a BLOCKING operation.
+// person.name = prompt("What is your name?");
+// person.age = prompt("What is your age?");
+
+// console.log(person);
+// alert(`Hello ${name}`);
+
+// Log the numbers from 1 to 10.
+// In parentheses, specify 3 things: start - stop - increment.
+// for (let i = 1; i <= 10; i++) {
+// console.log(i);
+// }
+
+// Add numbers from 1 to 10.
+let total = 0;
+
+for (let i = 1; i < 11; i++) {
+  total += i;
+}
+
+console.log(total);
