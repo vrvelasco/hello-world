@@ -236,9 +236,9 @@
 // JS is a DYNAMICALLY TYPED language.
 // We can quickly check to see if a value is 'truthy' or 'falsey'
 // if (name) {
-  // console.log("The user filled out the name");
+// console.log("The user filled out the name");
 // } else {
-  // console.error("User left name blank");
+// console.error("User left name blank");
 // }
 
 // console.log(Boolean(3)); // True
@@ -281,10 +281,51 @@
 // }
 
 // Add numbers from 1 to 10.
-let total = 0;
+// let total = 0;
 
-for (let i = 1; i < 11; i++) {
-  total += i;
+// for (let i = 1; i < 11; i++) {
+//   total += i;
+// }
+
+// console.log(total);
+
+// *************************************************************************************
+// In class 2/26/2020
+// *************************************************************************************
+
+// IMPLICIT CONVERSION
+// || means OR
+// If first EXPRESSION is 'truthy', then we don't EVALUATE the right hand-side.absolute
+
+// if 'prompt' RETURNs an empty STRING - because of the '||' this will be IMPLICITLY CONVERTED to 'false'.
+
+// const name = prompt("What is your name?") || "No name entered!";
+// console.log(name);
+
+// TODO: Using 'while', (and maybe the UNARY OPERATOR '!') keep 'prompting' while the name field is blank.
+
+// 'name' will be a STRING, but it might be blank.
+// let name = prompt("What is your name?");
+
+// console.log(typeof name);
+
+// If 'name' is blank, then '!' will convert to a Boolean(false)
+// While 'name' is not true, prompt for the name.
+// while (!name) {
+//   name = prompt("What is your name?");
+// }
+
+// console.log(name);
+
+let age = prompt("What is your age?");
+
+age = Number(age); // String to number
+
+console.log(Boolean(NaN)); // False
+
+console.log(Boolean(0)); // False
+
+// TODO: If the user enters something that EXPLICITLY CONVERTS to 'NaN', alert them.
+if (!age) {
+  alert("This is not a number!");
 }
-
-console.log(total);
