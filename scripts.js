@@ -317,15 +317,48 @@
 
 // console.log(name);
 
-let age = prompt("What is your age?");
+// let age = prompt("What is your age?");
 
-age = Number(age); // String to number
+// age = Number(age); // String to number
 
-console.log(Boolean(NaN)); // False
+// console.log(Boolean(NaN)); // False
 
-console.log(Boolean(0)); // False
+// console.log(Boolean(0)); // False
 
-// TODO: If the user enters something that EXPLICITLY CONVERTS to 'NaN', alert them.
-if (!age) {
-  alert("This is not a number!");
+// // TODO: If the user enters something that EXPLICITLY CONVERTS to 'NaN', alert them.
+// if (age !== 0 && !age) {
+//   alert("This is not a number!");
+//   age = Number(prompt("What is your age?"));
+// }
+
+// *************************************************************************************
+// In class 3/2/2020
+// *************************************************************************************
+const myArray = ["String", 23, "Another String", true, false];
+
+/*
+ * The LENGTH of an ARRAY is always 1 more than the highest index.
+ */
+
+console.log(myArray[1]); // 23
+console.log(myArray.length); // 5
+
+console.log(myArray[99]); // Undefined
+myArray[1] = 177; // Mutate
+myArray[1000] = "James"; // Added value to 1000
+console.log(myArray[1000]); // James
+console.log(myArray.length); // 1001
+console.log(myArray[888]); // Undefined
+
+const data = [
+  { name: "Manav", hobbies: ["eating", "cooking", "poker"] },
+  { name: "Dhanav" },
+  { Name: "James" }
+];
+
+console.log(data[0].hobbies[2]); // "poker"
+
+// Iterate over data and log every name.
+for (let i = 0; i < data.length - 1; i++) {
+  console.log(data[i].name);
 }
